@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+            <!-- Add more links as needed -->
+        
+        <div class="gallery">
+            
+                <img src="images/about.jpeg" alt="Anna in studio, 2023" onclick="openLightbox();setCurrentImage(1)">
+              
+                <div class="gallery-text">
+                <h4 id="who">who (and where)</h4>
+                    <p> Anna Emerson (b. 1998, Madison, Wisconsin) </p>
+                    <p> I was raised in rural Wisconsin, studied art and philosophy in Milwaukee, Wisconsin, and graduated
+                        university in 2022. I came to Madison the same year.</p>
+                    <p>My home is mobile, but my studio is located in Stoughton, Wisconsin.</p>
+
+                <h4 id="contact">contact</h4>
+                    <p>Email me at emersauce at gmail dot com.</p>
+                    <p>Leave a public message on this website's Chatango page--called "leave a trace". It's as anonymous
+                        as you make it. I'll remove any inappropriate messages (unless they are amusing). <U><a href="http://emersauce.chatango.com"
+                                target="_blank">http://emersauce.chatango.com</a></U></p>
+                <h4 id="website">website</h4>
+                    <p>I coded this website with the help of ChatGPT in January 2024. If you find any bugs, please send
+                        me a note via email or by posting on Chatango. </p>
+                    <p>The files and code for the website is stored on GitLab, and Netlify hosts it for free.</p>
+                    <div class="gallery-item"></div>
+            </div>            
+        </div>
+            <!-- Add more images as needed -->
+    </div>
+        <div id="lightbox" class="lightbox">
+            <img class="lightbox-content" id="lightbox-image">
+            <div id="caption" class="caption"></div>
+            <div class="arrow-container">
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+        </div>
+   
+    <script src="script.js"></script>
+
+</body>
+
+</html>

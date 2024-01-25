@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="animation-and-video.html">animation & video</a></p>
+            <ul>
+                <p><a href="3D-animation.html">> 3D animation</a></p>
+            </ul>
+            <ul>
+                <p><a href="2D-animation.html">> 2D animation</a></p>
+            </ul>
+            <ul>
+                <p><a href="video-art.html">> <i>video art</i></a></p>
+            </ul>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="video-gallery">
+
+                <h3 id="video art">video art</h3>
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/th1igBOgRGM?si=1zI4AigUzfOnQRyq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><a href="https://www.youtube.com/embed/th1igBOgRGM?si=NVYHc2j_VBuHEUnf"
+                                target="_blank"><u>Walking, 2019</u></a>: Ambulation Appreciation. Meditation on a
+                            common movement.</p>
+                    </div>
+                </div>
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/DyK8pVGoawI?si=-iRXVKorA3F1Bkxs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><a href="https://www.youtube.com/watch?v=DyK8pVGoawI" target="_blank"><u>Milwaukee: April 7,
+                                    2020</u></a>. Made in response to the uncertainty and concern that arose when the
+                            state of Wisconsin, led by a divided state government, held an important election while
+                            federal stay-at-home orders were in place due to the COVID-19 pandemic. There was a sense of
+                            turbulence, distrust, and injustice in Milwaukee as people made their way to the crowded
+                            polls or chose to stay home out of concern for personal and public health.</p>
+                    </div>
+                </div>
+                <!-- Add more images as needed -->
+        </div>
+            <div id="lightbox" class="lightbox">
+                <img class="lightbox-content" id="lightbox-image">
+                <div id="caption" class="caption"></div>
+                <div class="arrow-container">
+                    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                    <a class="next" onclick="changeImage(1)">&#10095;</a>
+                </div>
+            </div>
+        
+        <script src="script.js"></script>
+
+</body>
+
+</html>

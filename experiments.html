@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="gallery">
+            <div class="trio-gallery">
+                <h3>experiments</h3>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/check/blue_edited.jpg"
+                        alt="Untitled (Blue). Charcoal and pastel on newsprint."
+                        onclick="openLightbox();setCurrentImage(1)">
+                        <img src="images/experiments/check/green_edited_edited.jpg"
+                        alt="Untitled (Green). Charcoal and pastel on newsprint."
+                        onclick="openLightbox();setCurrentImage(2)">
+                        <img src="images/experiments/check/red_edited.jpg"
+                        alt="Untitled (Red). Charcoal and pastel on newsprint."
+                        onclick="openLightbox();setCurrentImage(3)">
+                    </div>
+                    <div class="gallery-item"><p><i>Untitled (Blue, Green, Red)</i>, 20xx. <br>Charcoal and pastel on newsprint.</p> </div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/projection/IMG_0693.JPG"
+                        alt="Light Sketching (2021)"
+                        onclick="openLightbox();setCurrentImage(4)">
+                        <img src="images/experiments/projection/ezgif-2-e3199341f3f5.gif"
+                        alt="Light Sketching (2021)"
+                        onclick="openLightbox();setCurrentImage(5)">
+                        <img src="images/experiments/projection/Screenshot 2024-01-23 at 23.55.45.png"
+                        alt="Light Sketching (2021)"
+                        onclick="openLightbox();setCurrentImage(6)">
+                    </div>
+                    <div class="gallery-item"><p><i>Light Sketching</i>, 2021</p></div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/digs/IMG_2217.png"
+                        alt="Digital Figures (2019)"
+                        onclick="openLightbox();setCurrentImage(7)">
+                        <img src="images/experiments/digs/digital figures.jpg"
+                        alt="Digital Figures (2019)"
+                        onclick="openLightbox();setCurrentImage(8)">
+                        <img src="images/experiments/digs/IMG_2218.png"
+                        alt="Digital Figures (2019)"
+                        onclick="openLightbox();setCurrentImage(9)">
+                    </div>
+                    <div class="gallery-item"><p><i>Digital Figures</i>, 2019</p></div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/oily-paintings/IMG_2206.jpg"
+                        alt="Oilings (2020), olive oil on paper"
+                        onclick="openLightbox();setCurrentImage(10)">
+                        <img src="images/experiments/oily-paintings/ezgif-2-287c0705a984.gif"
+                        alt="Oilings (2020), olive oil on paper"
+                        onclick="openLightbox();setCurrentImage(11)">
+                        <img src="images/experiments/oily-paintings/Screenshot 2024-01-23 at 23.51.27.png"
+                        alt="Oilings (2020), olive oil on paper"
+                        onclick="openLightbox();setCurrentImage(12)">
+                    </div>
+                    <div class="gallery-item"><p><i>Oilings</i>, 2020<br>Olive oil on paper</p></div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/ugly-america/IMG_1677.jpeg"
+                        alt="Vacation (20xx), charcoal on paper"
+                        onclick="openLightbox();setCurrentImage(13)">
+                        <img src="images/experiments/ugly-america/IMG_1678.jpeg"
+                        alt="Vacation (20xx), charcoal on paper"
+                        onclick="openLightbox();setCurrentImage(14)">
+                        <img src="images/experiments/ugly-america/IMG_1679.jpeg"
+                        alt="Vacation (20xx), charcoal on paper"
+                        onclick="openLightbox();setCurrentImage(15)">
+                    </div>
+                    <div class="gallery-item"><p><i>Vacation</i>, 20xx<br>Charcoal on paper</p></div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/oil-lenses/IMG_0737.jpg"
+                        alt="Untitled (2020), salad dressing, bowl, and window"
+                        onclick="openLightbox();setCurrentImage(16)">
+                        <img src="images/experiments/oil-lenses/oil-bubbles.gif.gif"
+                        alt="Untitled (2020), salad dressing, bowl, and window"
+                        onclick="openLightbox();setCurrentImage(17)">
+                        <img src="images/experiments/oil-lenses/IMG_0754.jpg"
+                        alt="Untitled (2020), salad dressing, bowl, and window"
+                        onclick="openLightbox();setCurrentImage(18)">
+                    </div>
+                    <div class="gallery-item"><p><i>Untitled</i>, 2020<br>Salad dressing, bowl, and window</p></div>
+                </div>
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                        <img src="images/experiments/porch-charcoal/ezgif-2-5330f9fa3d5f.gif"
+                        alt="Untitled (2020), charcoal on newsprint"
+                        onclick="openLightbox();setCurrentImage(16)">
+                        <img src="images/experiments/porch-charcoal/IMG_0416.jpg"
+                        alt="Untitled (2020), charcoal on newsprint"
+                        onclick="openLightbox();setCurrentImage(17)">
+                        <img src="images/experiments/porch-charcoal/ezgif-2-5f1d0c67093d.gif"
+                        alt="Untitled (2020), charcoal on newsprint"
+                        onclick="openLightbox();setCurrentImage(18)">
+                    </div>
+                    <div class="gallery-item"><p><i>Untitled</i>, 2020<br>Charcoal on newsprint</p></div>
+                </div>
+        </div>
+    </div>
+        <!-- Add more images as needed -->
+   
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <ul>
+                <p><a href="sonic-ink.html">> <i>Sonic Ink</i></a></p>
+            </ul>
+            <ul>
+                <p><a href="screenplay.html">> ScreenPlay</a></p>
+            </ul>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="combo-gallery">
+            <div class="video-gallery">
+                <h3><i>Sonic Ink</i></h3>
+
+                <div class="video-gallery-item">
+                    <img class="cc-image" src="images/creative-code/sonic-ink.png"
+                        alt="Digital painting created with Sonic Ink">
+                    <div class="gallery-text">
+                        <p><i>Sonic Ink</i> is a digital painting application made with Max/MSP from 2019-2022. Instead
+                            of pressure controlling the size of the brush, as is typical, brush size is controlled by the
+                            amplitude (loudness) of live or prerecorded audio.</p>
+                        ​
+                        <p><i>Sonic Ink</i> prompts participants to utilize their voices, musical instruments, or any
+                            sound in the creation of digital paintings. Using sound as a tool promotes an
+                            approach to mark-making that is less focused on perfection and tight control. Instead, it
+                            encourages experimentation, present-mindedness, and embracing chance as a collaborator.</p>
+
+                        <p>There are two iterations of the program: one is monochrome, a reference to traditional
+                            ink paintings; the other uses amplitude to choose a color grade between deep blue/green and
+                            red. An autonomous, though still audio-reactive, drawing function is also included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-gallery">
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/5TdrCkl-nQI?si=RQmYYE89h9a1klfm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><i>Sonic Ink</i> at the interactive art show "Feedback Loop" in Milwaukee, Wisconsin, 2022. Artist <u><a href="https://www.ian-michael-izard.com"
+                            target="_blank">Ian Michael Izard</a></u> uses the active sonic atmosphere to create an image. This iteration
+                            printed the "sonic inkings" on a thermal label printer. Participants were instantly given a
+                            physical print of their sound-based artwork. 
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/L3aO9riUVTY?si=04oHlXnO9kS83LC9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><i>Sonic Ink</i> being used in human-guided color mode.
+                        </p>
+                    </div>
+                </div>
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/Exgt8YMyRnU?si=lfdqKpRz8LlZG9E8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><i>Sonic Ink</i> being used in autonomous color mode.
+                        </p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

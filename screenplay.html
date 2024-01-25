@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <ul>
+                <p><a href="sonic-ink.html">> Sonic Ink</a></p>
+            </ul>
+            <ul>
+                <p><a href="screenplay.html">> <i>ScreenPlay</i></a></p>
+            </ul>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="combo-gallery">
+            <div class="video-gallery">
+                <h3><i>ScreenPlay</i></h3>
+
+                <div class="video-gallery-item">
+                    <img class="cc-image" src="images/creative-code/screenplay.png"
+                        alt="Digital painting created with Sonic Ink">
+                    <div class="gallery-text">
+                        <p><i>ScreenPlay</i> (2019) is a computer instrument that uses light as its only input. Made with
+                            Max/MSP and utilizing pixel-tracking technology, the participant is able to "play" the
+                            screen like an instrument with nothing more than their movements and a computer with a
+                            webcam and speaker.</p>
+
+                            <p>Some areas of the screen respond to vertical movements, others respond to horizontal 
+                            ones. When activated with movement, each direction emits a unique color and sound. The 
+                            velocity of the user's movements also dictate the sound's frequency and amplitude.</p>
+                            ​
+                            <p>Turning the relationship between movement and music on its head, <i>ScreenPlay</i> prompts
+                            participants to move their bodies in order to create new music.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-gallery">
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/ivQDT98rmsw?si=A9YjHZmOno1qv7n5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>ScreenPlay demonstration.</p>
+                </div>
+                
+               
+
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <ul>
+                <p><a href="3D-animation.html">> 3D animation</a></p>
+            </ul>
+            <ul>
+                <p><a href="2D-animation.html">> <i>2D animation</i></a></p>
+            </ul>
+            <ul>
+                <p><a href="video-art.html">> video art</a></p>
+            </ul>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+      
+         
+        <div class="video-gallery">
+            <h3 id="2D animation">2D animation</h3>
+            <div class="video-gallery-item">
+                <div class="video-container">
+                    <iframe width="350px" src="https://www.youtube.com/embed/tDOiB9xCeAQ?si=N1CTqANXRBMNFvxI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="gallery-text">
+                    <p><a href="https://www.youtube.com/embed/tDOiB9xCeAQ?si=N1CTqANXRBMNFvxI" target="_blank"><u>ice
+                                toots, 2021:</u></a> Two explorers start to hear rumblings...</p>
+                </div>
+            </div>
+            <div class="video-gallery-item">
+                <div class="video-container">
+                    <iframe width="350px" src="https://www.youtube.com/embed/DTWsM2HB9cY?si=KI5b10-zsh-kQ0X7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="gallery-text">
+                    <p><a href="https://www.youtube.com/embed/DTWsM2HB9cY?si=KI5b10-zsh-kQ0X7"
+                            target="_blank"><u>Vaporshave, 2020:</u></a> A simple and cute animation for a local band.
+                    </p>
+                </div>
+                <div class="video-gallery-item">
+                    <div class="video-container">
+                        <iframe width="350px" src="https://www.youtube.com/embed/EEAKqRg7mX8?si=BVwPUWCICvju3r4a"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-text">
+                        <p><a href="https://www.youtube.com/embed/EEAKqRg7mX8?si=BVwPUWCICvju3r4a"
+                                target="_blank"><u>You're Aquatic Now, 2021:</u></a> An exercise in developing an
+                            immersive atmosphere through sound and image. You're aquatic now!</p>
+                    </div>
+                </div>
+                
+        </div>
+                <!-- Add more images as needed -->
+        </div>
+            <div id="lightbox" class="lightbox">
+                <img class="lightbox-content" id="lightbox-image">
+                <div id="caption" class="caption"></div>
+                <div class="arrow-container">
+                    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                    <a class="next" onclick="changeImage(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

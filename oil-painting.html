@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <ul>
+                <p><a href="oil-painting.html">> <i>oil painting</a></i></p>
+            </ul>
+            <!-- <ul>
+                   <p><a href="drawing.html">> drawing</a></p>
+            </ul> -->
+            <ul>
+                <p><a href="sculpture.html">> sculpture</a></p>
+            </ul>
+            <ul>
+                <p><a href="digital-artwork.html">> digital artwork</a></p>
+            </ul>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="gallery">
+
+            <h3 id="oil painting">oil painting</h3>
+            <div class="gallery-item">
+                <img src="images/visual-art/oil-paintings/interior-exterior1.jpg"
+                    alt="Interior/Exterior #1 (2018). Oil on canvas, 16 x 20 inches"
+                    onclick="openLightbox();setCurrentImage(1)">
+                    <p><i>Interior/Exterior #1</i>, 2018<br>Oil on canvas, 16 x 20 inches</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/oil-paintings/interior-exterior2.jpg"
+                    alt="Interior/Exterior #2 (2018). Oil on canvas, 12 x 16 inches"
+                    onclick="openLightbox();setCurrentImage(2)">
+                    <p><i>Interior/Exterior #2</i>, 2018<br>Oil on canvas, 12 x 16 inches (sold)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/oil-paintings/untitled.jpeg"
+                    alt="Untitled (2018). Oil on canvas, 24 x 18 inches"
+                    onclick="openLightbox();setCurrentImage(3)">
+                    <p><i>Untitled</i>, 2018<br>Oil on canvas, 24 x 18 inches</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/oil-paintings/untitled2.jpeg"
+                    alt="Untitled (2018). Oil on canvas, 30 x 24 inches"
+                    onclick="openLightbox();setCurrentImage(4)">
+                    <p><i>Untitled</i>, 2018<br>Oil on canvas, 30 x 24 inches</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/oil-paintings/i.jpg"
+                    alt="I (2018). Oil on canvas, 20 x 24 inches"
+                    onclick="openLightbox();setCurrentImage(5)">
+                    <p><i>I</i>, 2018<br>Oil on canvas, 20 x 24 inches</p>
+            </div>
+           
+            </div>
+
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

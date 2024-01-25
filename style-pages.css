@@ -1,0 +1,567 @@
+/* Global Styles */
+body, html {
+    color: white;
+    background-color: rgb(17, 17, 17);
+    font-variant: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    font-size: large;
+}
+
+.dark {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.15s ease;
+
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+a:hover {
+    color:goldenrod;
+}
+#nav a:active, #nav a.active {
+    text-decoration:underline;
+}
+
+
+ul {
+    margin-left: -30px;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: monospace;
+    z-index: 100;
+}
+
+.ae-text {
+    padding: 10px;
+    margin-left: auto;
+    font-size: larger;
+    width:20vw;
+    visibility: hidden;
+}
+
+/* Circle Menu Styles */
+#circle {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+    visibility: visible;
+    cursor: pointer;
+    text-align: center;
+    transition: width 0.2s, min-width 0.2s, height 0.2s, min-height 0.2s, box-shadow 0.2s ease;
+    z-index: 1;
+    animation: hoverEffect 3s ease-in-out infinite;
+}
+
+#circle.expanded {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 40px white;
+}
+
+#circle:hover {
+    box-shadow: 0 0 30px white;
+}
+
+#circle.expanded:hover {
+    box-shadow: 0 0 50px white;
+}
+
+/* Menu Styles */
+#menu {
+    position: absolute;
+    text-decoration-color: rgb(17, 17, 17);
+    word-spacing: 100vw;
+    line-height: 20px;
+    transform: translateY(20px);
+    z-index: 3;
+    
+}
+
+#menu-text{
+    color: rgb(17, 17, 17);
+}
+
+.visible {
+    visibility: visible;
+    transition-delay: .2s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Keyframes for hovering effect */
+@keyframes hoverEffect {
+    0%, 100% {
+        transform: translateY(-1.5px);
+    }
+    50% {
+        transform: translateY(1.5px);
+    }
+}
+
+/* Left Column Styles */
+.left-column {
+    position:absolute;
+    font-size: medium;
+    min-width: 100px;
+    left: 10px;
+    font-size: large;
+}
+
+/* Gallery Styles */
+.container {
+    display: flex;
+    color: white;
+    padding-top: 50px;
+    padding-left:100px;
+    flex-direction: row;
+    justify-content: center; /* Center-align items within the container */
+    max-width: 100%;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    width: 100%;
+    margin-left:30px;
+    margin-right:5px;
+}
+.gallery-item {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 30vh;
+    flex-direction: column;
+    align-items: center; /* Center-align the images horizontally */
+    
+}
+
+
+.trio-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    width: 100%;
+    margin-left:30px;
+    margin-right:5px;
+
+
+}
+.trio-gallery-item {
+    max-width: 33vw;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center-align the images horizontally */
+
+    align-items: center; /* Center-align the images horizontally */
+}
+.trio-gallery-images {
+    max-width: 100%;
+    object-fit: contain;
+    display:flex;
+    flex-direction: row;
+    justify-content: center; /* Center-align the images horizontally */
+}
+
+.trio-gallery-images img {
+    margin-left: 5px;
+    border-radius: 2px;
+    align-self: center;
+    margin-bottom:10px;
+}
+.cc-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    width: 100%;
+    margin-left:30px;
+    margin-right:5px;
+}
+.cc-gallery img {
+    max-width: 20%;
+    max-height:70vh;
+    height: auto;
+    border-radius: 2px;
+    align-self: center;
+    margin-bottom:10px;
+}
+.cc-gallery-item {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 5vh;
+    flex-direction: column;
+    align-items: center; /* Center-align the images horizontally */
+    
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height:70vh;
+    height: auto;
+    border-radius: 2px;
+    align-self: center;
+    margin-bottom:10px;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 5px rgb(104, 104, 104);
+}
+
+.gallery-text {
+    text-align: left; /* left-align the text */
+    width: 80%;
+    max-width: 700px;
+    font-size:large;
+    padding-left:0px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+/* CSS to make the video container responsive */
+
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    width: 100%;
+    margin-left:5px;
+    margin-right:5px;
+
+}
+
+.video-gallery-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    align-items: center; /* Center-align the images horizontally */
+}
+.video-gallery-item img {
+    max-width: 40%; /* This will limit the image width to the width of its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+.video-container {
+    position: relative;
+    margin: 10px auto; /* Auto will center the div */
+    padding-bottom: 56.25%; /* This sets the aspect ratio */
+    width: 80%; 
+    background-color: black; /* Just to illustrate the container */
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow-y: auto;
+}
+
+.lightbox-content {
+    
+    max-width: 95%;
+    max-height: 90%;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.caption {
+    color: white;
+    text-align: right;
+    font-size: 16px;
+    width: 80%;
+    right: 10px;
+    top: 96%;
+    cursor: default;
+    position: absolute;
+    z-index: 1111;
+    text-shadow: 0 0 2px black;
+}
+
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2px);
+    pointer-events: none;
+    z-index: 1010;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    transition: 0.2s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: auto;
+    z-index: 1010;
+    text-shadow: 0 0 5px black;
+}
+
+.prev:hover, .next:hover {
+    color: goldenrod;
+}
+
+
+/*svg in ae-text */
+svg#logo_cloud {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+/* Add media query for screens smaller than 500px */
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
+    .left-column {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 30px;
+        order: -1; /* This will move the left column above the main content */
+        width: 100%;  /* Make the menu full width */
+        /* Add any other styles you need for the left column on smaller screens */
+    }
+
+    .gallery {
+        min-width: 100%; 
+        margin: 0 auto; /* Center the gallery content */
+        /* Add any other styles you need for the gallery on smaller screens */
+    }
+    
+
+    .gallery img {
+        min-width: 100%;
+        height: auto;
+        border-radius: 0px;
+        align-self: center;
+        margin-bottom:10px;
+    }
+
+
+    .video-gallery {
+        width: 100%; /* Allow gallery content to take up 90% of the screen width */
+        margin: 0 auto; /* Center the gallery content */
+        
+        /* Add any other styles you need for the gallery on smaller screens */
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        overflow-y: auto;
+    }
+
+    .lightbox-content {
+        
+        max-width: 95%;
+        max-height: 90%;
+        object-fit: cover;
+        box-shadow: 0 0 30px rgb(0, 0, 0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        cursor: default;
+    }
+
+    .caption {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        width: 80%;
+        left: 50%;
+        max-height: 25%;
+        transform: translateX(-50%);
+        top: 93%;
+        cursor: default;
+        position:relative;
+
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(92%);
+        pointer-events: none;
+        z-index: 1010;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        color: white;
+        font-weight: lighter;
+        font-size: 20px;
+        transition: 0.2s ease;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: auto;
+        z-index: 1020;
+        text-shadow: 0 0 5px black;
+    }
+
+
+        
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
+    .left-column {
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 30px;
+        order: -1; /* This will move the left column above the main content */
+        width: 95%;  /* Make the menu full width */
+        /* Add any other styles you need for the left column on smaller screens */
+    }
+
+    .gallery {
+        min-width: 100%; 
+        margin: 0 auto; /* Center the gallery content */
+        /* Add any other styles you need for the gallery on smaller screens */
+    }
+    
+    .left-column {
+        order: -1;
+    }
+    
+    .trio-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align items horizontally */
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+    
+    }
+    .trio-gallery img {
+        min-width: 100%;
+        height:auto;
+        border-radius: 0px;
+        align-self: center;
+        margin-bottom:10px;
+    }
+    .trio-gallery-item {
+        margin-bottom: 30vh;
+        margin: auto;
+        max-width: 100%;
+    }
+    .trio-gallery-images {
+        display:flex;
+        flex-direction: column;
+        justify-content: center; /* Center-align the images horizontally */
+        max-width: 100%;
+        margin-bottom:0px;
+    }
+    
+    .trio-gallery-images img {
+        max-width: 400px;
+        width:100%;
+        height:auto;
+        border-radius: 2px;
+        align-self: center;
+        margin-bottom:10px;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archive</title>
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="3d-animation.html">animation & video</a></p>
+            <p><a href="oil-painting.html">visual art</a></p>
+            <ul>
+                <p><a href="oil-painting.html">> oil painting</a></p>
+            </ul>
+            <!-- <ul>
+                   <p><a href="drawing.html">> drawing</a></p>
+            </ul> -->
+            <ul>
+                <p><a href="sculpture.html">> sculpture</a></p>
+            </ul>
+            <ul>
+                <p><a href="digital-artwork.html">> <i>digital artwork</i></a></p>
+            </ul>
+            <p><a href="sonic-ink.html">creative code</a></p>
+            <p><a href="experiments.html">experiments</a></p>
+            <p><a href="essays.html">writing</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="gallery">
+
+            <h3 id="digital artwork">digital artwork</h3>
+            <div class="gallery-item">
+                <img src="images/visual-art/digital-artwork/self-portrait-at-eighteen.gif"
+                    alt="Self-Portrait at Eighteen (2016). Software used: OpenToonz, Adobe After Effects."
+                    onclick="openLightbox();setCurrentImage(1)">
+                    <p><i>Self-Portrait at Eighteen</i>, 2016</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/digital-artwork/eclipse.jpeg"
+                    alt="Eclipse (2020). Software used: Blender."
+                    onclick="openLightbox();setCurrentImage(2)">
+                    <p><i>Eclipse</i>, 2020</p>
+            </div>
+            <div class="trio-gallery">
+                <div class="trio-gallery-item">
+                    <div class="trio-gallery-images">
+                    <img src="images/visual-art/digital-artwork/bender-park-abstractions/IMG_2221.JPG"
+                        alt="Bender Park Abstractions (2019). Software used: Adobe Photoshop."
+                        onclick="openLightbox();setCurrentImage(3)">
+                        <img src="images/visual-art/digital-artwork/bender-park-abstractions/IMG_2223.JPG"
+                        alt="Bender Park Abstractions (2019). Software used: Adobe Photoshop."
+                        onclick="openLightbox();setCurrentImage(4)">
+                        <img src="images/visual-art/digital-artwork/bender-park-abstractions/IMG_2225.JPG"
+                        alt="Bender Park Abstractions (2019). Software used: Adobe Photoshop."
+                        onclick="openLightbox();setCurrentImage(5)">
+                    </div>
+                    <p><i>Bender Park Abstractions</i>, 2019</p>
+                </div>
+            </div>       
+            
+            <div class="gallery-item">
+                <img src="images/visual-art/digital-artwork/untitled-2019.jpg"
+                    alt="Untitled (2019). Hardware and software used: webcam, iPhone Photos, Adobe Photoshop"
+                    onclick="openLightbox();setCurrentImage(6)">
+                    <p><i>Untitled</i>, 2019.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/digital-artwork/Untitled_Artwork 17.jpg"
+                    alt="Underwater Guide (2022). Digital painting from Notes on a Habitat (book)."
+                    onclick="openLightbox();setCurrentImage(7)">
+                    <img src="images/visual-art/digital-artwork/Untitled_Artwork 20.jpg"
+                    alt="The Oak Leaf Trail at Night (2022). Digital painting from Notes on a Habitat (book)."
+                    onclick="openLightbox();setCurrentImage(8)">
+                    <img src="images/visual-art/digital-artwork/Untitled_Artwork 2_edited_edited.jpg"
+                    alt="Self Portrait in Kenilworth Alley Window (2021). Digital painting from Notes on a Habitat (book)."
+                    onclick="openLightbox();setCurrentImage(9)">
+                    <img src="images/visual-art/digital-artwork/Untitled_Artwork.jpg"
+                    alt="School Bus via Camera Obscura (2022). Digital painting from Notes on a Habitat (book)."
+                    onclick="openLightbox();setCurrentImage(10)">
+                    <p>Digital paintings from <u><a href="book.html">Notes on a Habitat (book)</a></u>, 2021-2022.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/visual-art/digital-artwork/solitary duo.jpeg"
+                    alt="Solitary Duo (2016). Software used: Adobe Photoshop"
+                    onclick="openLightbox();setCurrentImage(11)">
+                    <p>Solitary Duo, 2016</p>
+            </div>
+           
+            </div>
+
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
