@@ -5,7 +5,7 @@ body, html {
     font-variant: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
-    font-size: larger;
+    font-size: large;
 }
 
 .dark {
@@ -55,7 +55,7 @@ header {
 .ae-text {
     padding: 10px;
     margin-left: auto;
-    font-size: larger;
+    font-size: large;
     width:20vw;
     visibility: hidden;
 }
@@ -140,7 +140,7 @@ header {
     font-size: medium;
     min-width: 100px;
     left: 10px;
-    font-size: larger;
+    font-size: large;
 }
 
 /* Gallery Styles */
@@ -248,7 +248,7 @@ header {
     text-align: left; /* left-align the text */
     width: 80%;
     max-width: 700px;
-    font-size:larger;
+    font-size:large;
     padding-left:0px;
     padding-right: 10px;
     padding-top: 30px;
