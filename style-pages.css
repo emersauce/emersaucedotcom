@@ -48,7 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-family: monospace;
+   /* font-family: monospace; */
     z-index: 100;
 }
 
@@ -140,7 +140,7 @@ header {
     font-size: medium;
     min-width: 100px;
     left: 10px;
-    font-size: large;
+    font-size: larger;
 }
 
 /* Gallery Styles */
@@ -248,7 +248,7 @@ header {
     text-align: left; /* left-align the text */
     width: 80%;
     max-width: 700px;
-    font-size:large;
+    font-size:larger;
     padding-left:0px;
     padding-right: 10px;
     padding-top: 30px;
