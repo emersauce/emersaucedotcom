@@ -5,8 +5,15 @@ body, html {
     font-variant: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
-    font-size: large;
 }
+
+html {
+    font-size: 16px; /* This sets the base font size for the entire document */
+  }
+  
+  body {
+    font-size: 1rem; /* This sets the default font size for the body of the document */
+  }
 
 .dark {
     color: rgb(17, 17, 17);
