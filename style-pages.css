@@ -80,30 +80,30 @@ header {
     position: absolute;
     top: 4%;
     left: 2%;
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    min-height: 30px;
-    max-width: 30px;
-    max-height: 30px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 0 20px white;
     visibility: visible;
     cursor: pointer;
     text-align: center;
-    transition: width 0.2s, min-width 0.2s, height 0.2s, min-height 0.2s, box-shadow 0.2s ease;
+    transition: 0.2s ease;
     z-index: 1;
     animation: hoverEffect 3s ease-in-out infinite;
 }
 
 #circle.expanded {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    height: 100px;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+    height: 150px;
     box-shadow: 0 0 40px white;
 }
 
@@ -120,7 +120,7 @@ header {
     position: absolute;
     text-decoration-color: rgb(17, 17, 17);
     word-spacing: 100vw;
-    line-height: 20px;
+    line-height: 35px;
     transform: translateY(20px);
     z-index: 3;
     font-family: monospace;
@@ -128,8 +128,9 @@ header {
 }
 
 #menu-text{
-    color: rgb(17, 17, 17);
+    color: rgba(255, 255, 255, 0);
 }
+
 
 .visible {
     visibility: visible;
@@ -138,6 +139,8 @@ header {
 
 .hidden {
     visibility: hidden;
+    color: rgba(17, 17, 17, 0);
+    
 }
 
 /* Keyframes for hovering effect */
@@ -165,7 +168,7 @@ header {
 .container {
     display: flex;
     color: white;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left:100px;
     flex-direction: row;
     justify-content: center; /* Center-align items within the container */
@@ -195,24 +198,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-align items horizontally */
-    width: 100%;
+    max-width: 30vw;
     margin-left:30px;
     margin-right:5px;
+    margin-top:10vh;
 
 
 }
 .trio-gallery-item {
-    max-width: 33vw;
-    margin-bottom: 30vh;
+    max-width: 30vw;
+    margin-bottom: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center-align the images horizontally */
-
     align-items: center; /* Center-align the images horizontally */
 }
 .trio-gallery-images {
-    max-width: 100%;
-    object-fit: contain;
+    max-width: 27vw;
+  
     display:flex;
     flex-direction: row;
     justify-content: center; /* Center-align the images horizontally */
@@ -222,7 +225,7 @@ header {
     margin-left: 5px;
     border-radius: 2px;
     align-self: center;
-    margin-bottom:10px;
+    
 }
 .cc-gallery {
     display: flex;
@@ -333,7 +336,7 @@ header {
     
     max-width: 95%;
     max-height: 90%;
-    object-fit: cover;
+    object-fit:cover;
     box-shadow: 0 0 30px rgb(0, 0, 0);
     position: absolute;
     top: 50%;
@@ -416,6 +419,7 @@ svg:not(:root) {
         flex-direction: column;
         position: relative;
         padding-bottom: 30px;
+        padding-top: 2.5vh;
         order: -1; /* This will move the left column above the main content */
         width: 100%;  /* Make the menu full width */
         /* Add any other styles you need for the left column on smaller screens */
@@ -530,6 +534,7 @@ svg:not(:root) {
         flex-direction: column;
         position: relative;
         padding-bottom: 30px;
+        padding-top:2.5vh;
         order: -1; /* This will move the left column above the main content */
         width: 95%;  /* Make the menu full width */
         /* Add any other styles you need for the left column on smaller screens */
@@ -537,6 +542,7 @@ svg:not(:root) {
 
     .gallery {
         min-width: 100%; 
+
         margin: 0 auto; /* Center the gallery content */
         /* Add any other styles you need for the gallery on smaller screens */
     }
@@ -552,6 +558,7 @@ svg:not(:root) {
         width: 100%;
         margin-left:0px;
         margin-right:0px;
+        max-width:90%;
     
     }
     .trio-gallery img {
@@ -570,6 +577,7 @@ svg:not(:root) {
         display:flex;
         flex-direction: column;
         justify-content: center; /* Center-align the images horizontally */
+        width:80%;
         max-width: 100%;
         margin-bottom:0px;
     }

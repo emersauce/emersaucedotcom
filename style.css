@@ -58,15 +58,15 @@ a {
 }
 
 #menu-text-now:hover{
-    text-shadow: 0 0 10px gray;
+        color:goldenrod;
 }
 
 #menu-text-archive:hover{
-    text-shadow: 0 0 10px grey;
+    color:goldenrod;
 }
 
 #menu-text-about:hover{
-    text-shadow: 0 0 10px gray;
+    color:goldenrod;
 }
 
 .visible {
