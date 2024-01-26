@@ -45,7 +45,7 @@ ul {
     margin-left: -30px;
 }
 
-.about-text {
+.just-text {
     text-align: left; /* left-align the text */
     width: 90%;
     max-width: 700px;
@@ -123,6 +123,7 @@ header {
     line-height: 20px;
     transform: translateY(20px);
     z-index: 3;
+    font-family: monospace;
     
 }
 
@@ -155,6 +156,7 @@ header {
     min-width: 100px;
     left: 10px;
     font-size: large;
+    font-family: monospace;
 }
 
 /* Gallery Styles */
