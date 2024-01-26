@@ -12,7 +12,7 @@ html {
   }
   
   body {
-    font-size: 1rem; /* This sets the default font size for the body of the document */
+    font-size: 1.2rem; /* This sets the default font size for the body of the document */
   }
 
 .dark {
@@ -45,6 +45,15 @@ ul {
     margin-left: -30px;
 }
 
+.about-text {
+    text-align: left; /* left-align the text */
+    width: 90%;
+    max-width: 700px;
+    padding-left:0px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
 /* Header Styles */
 header {
     position: fixed;
@@ -62,7 +71,6 @@ header {
 .ae-text {
     padding: 10px;
     margin-left: auto;
-    font-size: large;
     width:20vw;
     visibility: hidden;
 }
@@ -144,7 +152,6 @@ header {
 /* Left Column Styles */
 .left-column {
     position:absolute;
-    font-size: medium;
     min-width: 100px;
     left: 10px;
     font-size: large;
@@ -255,7 +262,6 @@ header {
     text-align: left; /* left-align the text */
     width: 80%;
     max-width: 700px;
-    font-size:large;
     padding-left:0px;
     padding-right: 10px;
     padding-top: 30px;
@@ -335,7 +341,6 @@ header {
 .caption {
     color: white;
     text-align: right;
-    font-size: 16px;
     width: 80%;
     right: 10px;
     top: 96%;
@@ -464,7 +469,6 @@ svg:not(:root) {
     .caption {
         color: white;
         text-align: center;
-        font-size: 16px;
         width: 80%;
         left: 50%;
         max-height: 25%;
