@@ -152,6 +152,8 @@ header {
 
 /* Left Column Styles */
 .left-column {
+    font-size: large;
+    font-family: monospace;
     position:absolute;
     min-width: 100px;
     left: 10px;
@@ -523,6 +525,8 @@ svg:not(:root) {
     }
 
     .left-column {
+        font-size: large;
+        font-family: monospace;
         flex-direction: column;
         position: relative;
         padding-bottom: 30px;
