@@ -132,7 +132,7 @@ var lightboxElement = document.getElementById('lightbox');
 var hammer = new Hammer(lightboxElement);
 
 // Configure the swipe gesture with a tolerance for slightly angled swipes
-hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 50, velocity: 0.3 });
+hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 50, velocity: 0.2 });
 
 // Handle swipe left and right events
 hammer.on('swipeleft', function() {
