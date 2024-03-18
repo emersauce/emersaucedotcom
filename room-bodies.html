@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>now</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="page1.html">companion</a></p>
+            <p><a href="chain-of-lakes.html"><i>chain of lakes</a></i></p>
+            <p><a href="independence-day.html">indepedence day</a></p>
+            <p><a href="room-bodies.html"><i>room bodies</a></i></p>
+          
+
+            <!-- Add more links as needed -->
+        </div>
+        <div class="gallery">
+
+            <h3 id="Room Bodies">Three Room Bodies</h3>
+            <div class="gallery-item">
+                <img src="images/now/studio studies/room-bodies/all-three.jpeg"
+                    
+                    onclick="openLightbox();setCurrentImage(1)">
+
+                <p><i>Three Room Bodies</i>, 2023</p>
+                <p>Study of a room's inhabitants. Wall paint and oil on hardboard. Each ~16 x 24 inches.</p>
+                <div class="gallery-text"></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/studio studies/room-bodies/w-pedro.jpeg" onclick="openLightbox();setCurrentImage(2)">
+                <img src="images/now/studio studies/room-bodies/d-pedro.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Shades of Guest</i>, 2023</p>
+               </div>
+            
+            <div class="gallery-item">
+                <img src="images/now/studio studies/room-bodies/w-cherub-2.jpeg" onclick="openLightbox();setCurrentImage(6)">
+                <img src="images/now/studio studies/room-bodies/d-cherub.jpeg" onclick="openLightbox();setCurrentImage(7)">
+                <img src="images/now/studio studies/room-bodies/d-cherub-2.jpeg" onclick="openLightbox();setCurrentImage(8)">
+                <p><i>Fallen Cherub</i>, 2023</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/now/studio studies/room-bodies/w-cleaner-2.jpeg" onclick="openLightbox();setCurrentImage(4)">
+                <img src="images/now/studio studies/room-bodies/Screenshot 2024-03-18 at 01.21.45.png" onclick="openLightbox();setCurrentImage(5)">
+                <p><i>Cleaner (with Bug)</i>, 2023</p>
+            </div>
+
+
+
+        
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- Add more images as needed -->
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
