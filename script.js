@@ -126,3 +126,19 @@ function positionArrows() {
     prevArrow.style.left = arrowSpacing + 'px';
     nextArrow.style.right = arrowSpacing + 'px';
 }
+
+// Initialize Hammer.js for the lightbox element
+var lightboxElement = document.getElementById('lightbox');
+var hammer = new Hammer(lightboxElement);
+
+// Configure the swipe gesture with a tolerance for slightly angled swipes
+hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 10, velocity: 0.3 });
+
+// Handle swipe left and right events
+hammer.on('swipeleft', function() {
+    changeImage(1); // Swipe left to show the next image
+});
+
+hammer.on('swiperight', function() {
+    changeImage(-1); // Swipe right to show the previous image
+});
