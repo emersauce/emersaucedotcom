@@ -335,7 +335,7 @@ text-align: center;
     left: 0;
     top: 0;
     width: 100vh;
-    height: 104vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
     overflow-y: auto;
 }
@@ -464,7 +464,7 @@ svg:not(:root) {
         left: 0;
         top: 0;
         width: 100vh;
-        height: 104vh;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.85);
         overflow-y: auto;
     }
