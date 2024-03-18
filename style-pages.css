@@ -154,6 +154,12 @@ header {
     }
 }
 
+.center-column {
+font-size: large;
+font-family: monospace;
+text-align: center;
+}
+
 
 /* Left Column Styles */
 .left-column {
