@@ -1,20 +1,71 @@
-
 function expandCircle() {
     var circle = document.getElementById("circle");
     var menu = document.getElementById("menu");
+
     circle.classList.toggle("expanded");
     if (menu.classList.contains("hidden")) {
         menu.classList.remove("hidden");
         menu.classList.add("visible");
+        // Show the menu text with a delay to wait for the transition
+        setTimeout(function() {
+            var menuLinks = menu.getElementsByTagName("a");
+            for (var i = 0; i < menuLinks.length; i++) {
+                menuLinks[i].style.opacity = 1;
+            }
+        }, 200); // Adjust the delay (in milliseconds) to match your transition duration
     } else {
         menu.classList.remove("visible");
         menu.classList.add("hidden");
+        var menuLinks = menu.getElementsByTagName("a");
+        for (var i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].style.opacity = 0; // Hide the menu text immediately
+        }
     }
 }
+
+// Function to collapse circle menu when clicking away from it
+document.addEventListener('click', function(e) {
+    var circle = document.getElementById("circle");
+    var menu = document.getElementById("menu");
+    var target = e.target;
+
+    // Check if the click is outside the circle and menu
+    if (!circle.contains(target) && !menu.contains(target)) {
+        menu.classList.remove("visible");
+        menu.classList.add("hidden");
+        circle.classList.remove("expanded");
+        var menuLinks = menu.getElementsByTagName("a");
+        for (var i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].style.opacity = 0; // Hide the menu text immediately
+        }
+    }
+});
+
 
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.gallery img');
 const lightboxImage = document.getElementById('lightbox-image');
+
+function openLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    // lightbox.style.display = 'flex'; // This line may be unnecessary as the next line sets the display to 'block'
+    document.getElementById('lightbox').style.display = 'flex';
+
+    // Initialize Hammer.js on the lightbox element
+    var hammer = new Hammer(lightbox);
+
+    // Enable horizontal swiping
+    hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+    // Handle swipe events
+    hammer.on('swipeleft', function () {
+        changeImage(1); // Swipe left to show the next image
+    });
+
+    hammer.on('swiperight', function () {
+        changeImage(-1); // Swipe right to show the previous image
+    });
+}
 
 function openLightbox() {
     var lightbox = document.getElementById('lightbox');
