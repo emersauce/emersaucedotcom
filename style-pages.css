@@ -8,11 +8,11 @@ body, html {
 }
 
 html {
-    font-size: 16px; /* This sets the base font size for the entire document */
+    font-size: 1.15rem; /* This sets the base font size for the entire document */
   }
   
   body {
-    font-size: 1.2rem; /* This sets the default font size for the body of the document */
+    font-size: 1.15rem; /* This sets the default font size for the body of the document */
   }
 
 .dark {
@@ -162,8 +162,7 @@ header {
     position:absolute;
     min-width: 100px;
     left: 10px;
-    font-size: large;
-    font-family: monospace;
+   
 }
 
 /* Gallery Styles */
