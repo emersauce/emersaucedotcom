@@ -48,9 +48,8 @@ const lightboxImage = document.getElementById('lightbox-image');
 
 function openLightbox() {
     var lightbox = document.getElementById('lightbox');
-    // lightbox.style.display = 'flex'; // This line may be unnecessary as the next line sets the display to 'block'
-    document.getElementById('lightbox').style.display = 'flex';
-
+    lightbox.style.display = 'flex'; // Display the lightbox
+    
     // Initialize Hammer.js on the lightbox element
     var hammer = new Hammer(lightbox);
 
@@ -67,15 +66,8 @@ function openLightbox() {
     });
 }
 
-function openLightbox() {
-    var lightbox = document.getElementById('lightbox');
-   // lightbox.style.display = 'flex'; // This line may be unnecessary as the next line sets the display to 'block'
-    document.getElementById('lightbox').style.display = 'flex';
-    
-}
-
 function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
+    document.getElementById('lightbox').style.display = 'none'; // Hide the lightbox
 }
 
 // Close lightbox when clicking on the background
