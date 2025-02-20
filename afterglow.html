@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>now</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+        <div id="circle" onclick="expandCircle()">
+            <div id="menu" class="hidden">
+                <a class="dark" href="page1.html">now</a>
+                <a class="dark" href="archive.html">archive</a>
+                <a class="dark" href="about.html">about</a>
+            </div>
+        </div>
+        <div class="ae-text"></div>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <p><a href="afterglow.html"><i></i>afterglow</a></i></p>
+            <p><a href="page1.html">companion</a></p>
+            <p><a href="chain-of-lakes.html">chain of lakes</a></p>
+            <p><a href="independence-day.html">independence day</a></p>
+            <p><a href="room-bodies.html">room bodies</a></p>
+
+            <!-- Add more links as needed -->
+        </div>
+        <div class="gallery">
+
+            <h3 id="afterglow">Afterglow</h3>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_01.jpeg"
+                    onclick="openLightbox();setCurrentImage(1)">
+
+                <p><i>Overpowered</i>, 2025</p>
+                <p>Dry pastel on paper. 18 x 24 inches.</p>
+                <div class="gallery-text">
+                    <p>One September afternoon in 2024, I began a solo sail that would extend for 24 hours nonstop. There was light wind all day and night, but in the late morning of the second day, the wind picked up and my large genoa became overpowered. I pointed into the wind and waves and managed to douse the sail. It was a key moment of challenge and confidence-building as a singlehanded sailor.</p>
+            
+                </div>
+
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_02.jpeg" onclick="openLightbox();setCurrentImage(2)">
+                <p><i>John Waiting at Willow Beach</i>, 2025</p>
+                <p>Dry pastel on paper. 18 x 24 inches.</p>
+                <div class="gallery-text">
+                    <p>I took a handful of photos in the summer of 2024, but they only existed on my phone with no digital backups. When I dropped my phone into Lake Mendota, a photo of my friend waiting in a canoe (our transportation to my moored sailboat) on the beach was the photo I missed the most. The <i>Afterglow</i> series emerged from my desire to memorialize moments that had vanished with my lost photos.</p>
+            
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_03.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Ben and Caustics on a Sail</i>, 2025</p>
+                <p>Dry pastel on paper. 18 x 24 inches.</p>
+                <div class="gallery-text">
+                    <p>We tied the tiller straight, stood on the deck, and steered my 20 foot boat with our own dancing weight. The light bounced off the surface of the water and onto the boat, dancing with us.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_04.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Gulls at Sunrise</i>, 2025</p>
+                <p>Dry pastel on paper. 8 x 5 inches.</p>
+                <div class="gallery-text">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_05.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Gulls at Noon</i>, 2025</p>
+                <p>Dry pastel on paper. 8 x 5 inches.</p>
+                <div class="gallery-text">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_06.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Gulls at Dusk</i>, 2025</p>
+                <p>Dry pastel on paper. 8 x 5 inches.</p>
+                <div class="gallery-text">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_07.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Sunrise from Mooring Field 2</i>, 2025</p>
+                <p>Dry pastel on paper. 8.5 x 11 inches.</p>
+                <div class="gallery-text"> The first time I slept aboard any vessel was on my own moored boat, soon after taking ownership for $1 and a promise to pay it forward. On that first morning, I awoke to a glassy lake; the profound calm of a windless, golden sunrise. 
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/now/afterglow/AE_08.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                <p><i>Tenney Park Breakwater at Night</i>, 2025</p>
+                <p>Dry pastel on paper. 14 x 11 inches.</p>
+                <div class="gallery-text"> These thirteen lights are a constant presence on Lake Mendota, summer and winter.
+                </div>
+            </div>
+            <div class="gallery-item">
+                    <img src="images/now/afterglow/AE_09.jpeg" onclick="openLightbox();setCurrentImage(3)">
+                    <p><i>Rise Over Maple Bluff</i>, 2025</p>
+                    <p>Dry pastel on paper. 8.5 x 8.5 inches.</p>
+                    
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    </div>
+    <!-- Add more images as needed -->
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="caption" class="caption"></div>
+        <div class="arrow-container">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
